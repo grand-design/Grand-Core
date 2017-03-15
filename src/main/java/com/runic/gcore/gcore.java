@@ -1,6 +1,7 @@
 package com.runic.gcore;
 
 import com.runic.gcore.data.ModStrings;
+import com.runic.gcore.item.ModItems;
 import com.runic.gcore.proxies.CommonProxy;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -21,6 +22,7 @@ public class gcore {
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event){
+        ModItems.init();
 
     }
 
